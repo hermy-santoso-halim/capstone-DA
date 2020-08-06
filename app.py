@@ -89,7 +89,7 @@ def index():
     result=''
     pageCount=0
     nextUrl = returnData[1]
-    while ((nextUrl != '') and (pageCount < 10)):
+    while ((nextUrl != '') and (pageCount < 1)):
         print(nextUrl)
         returnData2 = scrap('https://www.imdb.com'+nextUrl)
         df2 = returnData2[0]
